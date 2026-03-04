@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
-            logo.src = "assets/images/logo-flip.png"; // 👉 novi logo
+            logo.src = "assets/images/logo-flip.svg"; // 👉 novi logo
         } else {
             header.classList.remove('scrolled');
-            logo.src = "assets/images/logo-clean.png"; // 👉 original
+            logo.src = "assets/images/logo-clean.svg"; // 👉 original
         }
     });
 
@@ -85,3 +85,4 @@ document.addEventListener('DOMContentLoaded', () => {
         yearEl.textContent = new Date().getFullYear();
     }
 });
+
