@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doremiredo - Centar glazbe | Split</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header" class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo-link">
+                <div class="logo-wrapper">
+                    <img src="./assets/images/logo-clean.svg" alt="doremiredo logo" id="logo-img" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">
+                        <div class="icon-circle">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <span class="logo-text">doremiredo</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="#programi" class="nav-link">Programi</a></li>
+                    <li><a href="#o-nama" class="nav-link">O nama</a></li>
+                    <li><a href="#cjenik" class="nav-link">Cjenik</a></li>
+                    <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                    <li><a href="#kontakt" class="btn-enroll">Upisi</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-toggle" class="mobile-toggle">
+                <span id="menu-icon-menu" class="icon-menu">
+                    <i data-lucide="menu"></i>
+                </span>
+                <span id="menu-icon-x" class="icon-x" style="display: none;">
+                    <i data-lucide="x"></i>
+                </span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <nav class="mobile-nav">
+                <a href="#programi" class="mobile-link">Programi</a>
+                <a href="#o-nama" class="mobile-link">O nama</a>
+                <a href="#cjenik" class="mobile-link">Cjenik</a>
+                <a href="#kontakt" class="mobile-link">Kontakt</a>
+                <a href="#kontakt" class="mobile-link btn-mobile-enroll">Upisi</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <!--<div class="bg-shape bg-shape-1"></div>
+            <div class="bg-shape bg-shape-2"></div>-->
+
+            <div class="container hero-container">
+                <div class="hero-content reveal-left">
+                    <h1 class="hero-title">
+                        Glazba koja <br>
+                        <span class="highlight-italic">pokreće</span> maštu.
+                    </h1>
+
+                    <p class="hero-description">
+                        Dobrodošli u <span class="highlight-bold">doremiredo</span> – Centar glazbe u Splitu gdje djeca kroz igru i Orffov instrumentarij otkrivaju čaroliju ritma i melodije.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#programi" class="btn-primary">Istraži programe</a>
+                        <a href="#kontakt" class="btn-secondary">Javi nam se</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper reveal-scale">
+                    <div class="main-hero-image">
+                        <img src="./assets/images/hero.webp" alt="Glazbena radionica" onerror="this.src='https://picsum.photos/seed/music-kids/800/1000'">
+                    </div>
+
+                    <!-- Xylophone decorative elements -->
+                    <div class="decorative-image xylophone-1">
+                        <img src="ksilofon1.jpg" alt="Ksilofon" onerror="this.parentElement.style.display='none'">
+                    </div>
+
+                    <div class="bg-circle-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programi" class="programs-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-text">
+                        <h2 class="section-subtitle">Naši programi</h2>
+                        <h3 class="section-title">Odaberi svoj <span class="italic">glazbeni put</span></h3>
+                    </div>
+                    <p class="header-description">
+                        Nudimo raznolike programe za sve uzraste, s posebnim naglaskom na rani glazbeni razvoj djece u <span class="font-bold">doremiredo</span> centru.
+                    </p>
+                </div>
+
+                <div class="programs-grid">
+                    <!-- Program Card 1 -->
+                    <div class="program-card-container priority">
+                        <div class="program-card">
+                            <!-- Front -->
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="./assets/images/program-radionice.webp" alt="Glazbene radionice" onerror="this.src='https://picsum.photos/seed/orff/600/400'">
+                                    <div class="image-overlay"></div>
+                                    <div class="card-icon icon-rose">
+                                        <i data-lucide="music"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Glazbene radionice</h4>
+                                    <p class="card-text">Naš najpopularniji program za djecu. Kroz Orffov instrumentarij, perkusije i pokret, djeca razvijaju osjećaj za ritam i timski rad.</p>
+                                    <button class="flip-btn">
+                                        Saznaj više <i data-lucide="arrow-right"></i>
+                                    </button>
+                                </div>
+                                <div class="priority-badge">Najpopularnije</div>
+                            </div>
+                            <!-- Back -->
+                            <div class="card-back">
+                                <button class="unflip-btn">
+                                    <i data-lucide="x"></i>
+                                </button>
+                                <h4 class="card-title">Glazbene radionice</h4>
+                                <p class="card-details">Radionice su podijeljene po dobnim skupinama. Koristimo ksilofone, metalofone i razne udaraljke. Fokus je na doživljaju glazbe cijelim tijelom.</p>
+                                <a href="#kontakt" class="btn-card-action">Prijavi se odmah</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program Card 2 -->
+                    <div class="program-card-container">
+                        <div class="program-card">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="./assets/images/program-klavir.webp" alt="Klavir" onerror="this.src='https://picsum.photos/seed/piano/600/400'">
+                                    <div class="image-overlay"></div>
+                                    <div class="card-icon icon-amber">
+                                        <i data-lucide="piano"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Klavir</h4>
+                                    <p class="card-text">Individualni satovi klavira prilagođeni uzrastu i predznanju. Od prvih nota do kompleksnih skladbi.</p>
+                                    <button class="flip-btn">
+                                        Saznaj više <i data-lucide="arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <button class="unflip-btn">
+                                    <i data-lucide="x"></i>
+                                </button>
+                                <h4 class="card-title">Klavir</h4>
+                                <p class="card-details">Nastava se odvija 1 na 1. Program prilagođavamo interesima učenika, od klasike do modernih pop pjesama.</p>
+                                <a href="#kontakt" class="btn-card-action">Prijavi se odmah</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program Card 3 -->
+                    <div class="program-card-container">
+                        <div class="program-card">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="./assets/images/program-pjevanje.webp" alt="Pjevanje" onerror="this.src='https://picsum.photos/seed/sing/600/400'">
+                                    <div class="image-overlay"></div>
+                                    <div class="card-icon icon-indigo">
+                                        <i data-lucide="mic-2"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Pjevanje</h4>
+                                    <p class="card-text">Otkrijte svoj glas. Radimo na tehnici disanja, intonaciji i interpretaciji različitih glazbenih žanrova.</p>
+                                    <button class="flip-btn">
+                                        Saznaj više <i data-lucide="arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <button class="unflip-btn">
+                                    <i data-lucide="x"></i>
+                                </button>
+                                <h4 class="card-title">Pjevanje</h4>
+                                <p class="card-details">Vježbe disanja, postava glasa i rad na pjesmama po izboru. Mogućnost grupnog ili individualnog rada.</p>
+                                <a href="#kontakt" class="btn-card-action">Prijavi se odmah</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program Card 4 -->
+                    <div class="program-card-container">
+                        <div class="program-card">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="./assets/images/program-solfeggio.webp" alt="Solfeggio" onerror="this.src='https://picsum.photos/seed/sing/600/400'">
+                                    <div class="image-overlay"></div>
+                                    <div class="card-icon icon-green">
+                                        <i data-lucide="book-open"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Solfeggio</h4>
+                                    <p class="card-text">Teorijska podloga koja je neophodna za svakog glazbenika. Učenje nota, ljestvica i glazbenog opismenjavanja.</p>
+                                    <button class="flip-btn">
+                                        Saznaj više <i data-lucide="arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <button class="unflip-btn">
+                                    <i data-lucide="x"></i>
+                                </button>
+                                <h4 class="card-title">Solfeggio</h4>
+                                <p class="card-details">Razvijanje glazbenog sluha, ritma i teorijskog znanja kroz zabavne i interaktivne vježbe.</p>
+                                <a href="#kontakt" class="btn-card-action">Prijavi se odmah</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="o-nama" class="about-section">
+            <div class="container about-container">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="main-about-image">
+                        <img src="./assets/images/voditeljica.webp" alt="Lovorka Ivankovic Jakelic" onerror="this.src='https://picsum.photos/seed/lovorka/800/1000'">
+                    </div>
+                    <div class="bg-circle-accent"></div>
+                    <div class="bg-pill-accent"></div>
+                    <!--<div class="leader-badge">
+                        <h4 class="leader-name">Lovorka Ivanković Jakelić</h4>
+                        <p class="leader-title">Osnivačica i voditeljica</p>
+                        <p class="leader-quote">"Glazba nije samo vještina, ona je način na koji dijete doživljava svijet oko sebe."</p>
+                    </div>-->
+                </div>
+
+                <div class="about-content reveal-right">
+                    <h2 class="section-subtitle">O nama</h2>
+                    <h3 class="section-title">
+                        Tradicija i <span class="highlight-red">inovacija</span> u <span class="highlight-red-bold">doremiredo</span> centru.
+                    </h3>
+                    <p class="about-description">
+                        Glazbeni centar <span class="highlight-bold">doremiredo</span> osnovan je s vizijom stvaranja mjesta gdje se glazba živi. Naš pristup temelji se na <strong>Orffovoj metodi</strong>, koja potiče dječju prirodnu kreativnost kroz ritam, pokret i pjevanje.
+                    </p>
+
+                    <div class="about-leader">
+                        <p class="about-description"><strong>Lovorka Ivanković Jakelić</strong>, mag.mus., završila je diplomski studij teorije glazbe na Universität für Musik und darstellende Kunst Graz. Predavala je svim uzrastima u Glazbenoj školi u Varaždinu i u Tisnom, vodila nekoliko zborova i vokalno - instrumentalni sastav Trio Decoro. Osnivač je centra glazbe <span class="highlight-bold">doremiredo</span>.</p>
+                    </div>
+
+                    <ul class="about-features">
+                        <li>
+                            <div class="feature-icon"><i data-lucide="check-circle-2"></i></div>
+                            <p>Stručno vodstvo s dugogodišnjim iskustvom</p>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i data-lucide="check-circle-2"></i></div>
+                            <p>Fokus na rani razvoj djeteta kroz glazbu</p>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i data-lucide="check-circle-2"></i></div>
+                            <p>Korištenje autentičnog Orffovog instrumentarija</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="cjenik" class="pricing-section">
+            <div class="container pricing-container">
+                <div class="pricing-intro reveal-left">
+                    <h2 class="section-subtitle">Cjenik</h2>
+                    <h3 class="section-title">
+                        Pronađi <span class="italic highlight-red">ritam</span> koji ti odgovara.
+                    </h3>
+                    <p class="pricing-description">
+                        Vjerujemo da svatko zaslužuje priliku za glazbeno izražavanje. Naši programi su osmišljeni kako bi pružili vrhunsku kvalitetu učenja uz prijateljsku atmosferu.
+                    </p>
+                    <!--<ul class="pricing-features">
+                        <li>
+                            <div class="check-icon"><i data-lucide="check"></i></div>
+                            <span>Mjesečna članarina za radionice</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i data-lucide="check"></i></div>
+                            <span>Paketi individualnih satova klavira</span>
+                        </li>
+                    </ul>-->
+                    <a href="./assets/documents/cjenik.pdf"
+                       class="btn-download"
+                       download="cjenik.pdf"
+                       target="_blank">
+                        <i data-lucide="file-text"></i>
+                        <span>Preuzmi puni cjenik (PDF)</span>
+                        <i data-lucide="download" class="download-icon"></i>
+                    </a>
+                </div>
+
+                <div class="pricing-card-wrapper reveal-right">
+                    <div class="pricing-card">
+                        <div class="card-header">
+                            <p class="card-subtitle">Najpopularnije</p>
+                            <h4 class="card-title">Glazbene radionice</h4>
+                            <p class="card-description">Grupni rad za djecu uz Orffov instrumentarij.</p>
+                        </div>
+                        <div class="card-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Trajanje</span>
+                                <span class="detail-value">45 min / tjedno</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Broj polaznika</span>
+                                <span class="detail-value">Max 8 po grupi</span>
+                            </div>
+                        </div>
+                        <div class="card-price-box">
+                            <p class="price-label">Već od</p>
+                            <p class="price-value">50€<span class="price-unit">/mj</span></p>
+                        </div>
+                    </div>
+                    <div class="bg-card-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontakt" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info reveal-left">
+                    <h2 class="section-subtitle">Kontakt</h2>
+                    <h3 class="section-title">
+                        Započnimo vašu <span class="highlight-red">glazbenu priču</span>.
+                    </h3>
+                    <p class="contact-description">Imate pitanja o programima ili želite upisati svoje dijete? Slobodno nam se javite, rado ćemo odgovoriti.</p>
+
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <div class="method-icon"><i data-lucide="phone"></i></div>
+                            <div class="method-text">
+                                <p class="method-label">Telefon</p>
+                                <p class="method-value">+385 95 895 3387</p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon"><i data-lucide="mail"></i></div>
+                            <div class="method-text">
+                                <p class="method-label">Email</p>
+                                <p class="method-value">info@doremiredo.hr</p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                            <div class="method-text">
+                                <p class="method-label">Lokacija</p>
+                                <p class="method-value">Dubrovačka 18, 21000 Split</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form"
+                          action="https://formsubmit.co/info@doremiredo.hr"
+                          method="POST">
+
+                        <!-- Hidden settings -->
+                        <input type="hidden" name="_subject" value="Novi upit s web stranice doremiredo">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Ime i prezime</label>
+                                <input type="text"
+                                       name="ime"
+                                       placeholder="Vaše ime"
+                                       class="form-input"
+                                       required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Email adresa</label>
+                                <input type="email"
+                                       name="email"
+                                       placeholder="vas@email.com"
+                                       class="form-input"
+                                       required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Program koji vas zanima</label>
+                            <select name="program"
+                                    class="form-select"
+                                    required>
+                                <option value="">Odaberite program</option>
+                                <option value="Glazbene radionice (djeca)">Glazbene radionice (djeca)</option>
+                                <option value="Klavir">Klavir</option>
+                                <option value="Pjevanje">Pjevanje</option>
+                                <option value="Solfeggio">Solfeggio</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Poruka</label>
+                            <textarea name="poruka"
+                                      rows="4"
+                                      placeholder="Kako vam možemo pomoći?"
+                                      class="form-textarea"
+                                      required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Pošalji upit <i data-lucide="send"></i>
+                        </button>
+
+                    </form>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="map-wrapper reveal-up">
+                    <iframe class="map-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.6227015396303!2d16.45325937669994!3d43.51020587110918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355f998d98ab7b%3A0x4df04d13ca391408!2sdoremiredo%20centar%20glazbe!5e0!3m2!1shr!2shr!4v1772446181083!5m2!1shr!2shr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <!--<div class="map-overlay">
+                        <p class="map-address">Dubrovačka 18</p>
+                        <p class="map-city">21000 Split, Hrvatska</p>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="icon-circle">
+                            <img src="assets/images/logo-clean.svg" alt="doremiredo logo" class="footer-logo-img">
+                        </div>
+                        <!--<span class="logo-text">doremiredo</span>-->
+                    </a>
+                    <p class="footer-description">Glazbeni centar u Splitu posvećen ranom razvoju djece kroz Orffovu metodu i individualnu nastavu instrumenata.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/doremiredo.st/"
+                           class="social-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i data-lucide="instagram"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/doremiredocentarglazbe/"
+                           class="social-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i data-lucide="facebook"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@doremiredo.centar.glazbe"
+                           class="social-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Programi</h4>
+                    <ul class="footer-list">
+                        <li><a href="#programi" class="footer-link">Glazbene radionice</a></li>
+                        <li><a href="#programi" class="footer-link">Klavir</a></li>
+                        <li><a href="#programi" class="footer-link">Pjevanje</a></li>
+                        <li><a href="#programi" class="footer-link">Solfeggio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Brzi linkovi</h4>
+                    <ul class="footer-list">
+                        <li><a href="#o-nama" class="footer-link">O nama</a></li>
+                        <li><a href="#cjenik" class="footer-link">Cjenik</a></li>
+                        <li><a href="#kontakt" class="footer-link">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Kontakt podaci</h4>
+                    <ul class="footer-list">
+                        <li class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Dubrovačka 18, 21000 Split</span>
+                        </li>
+                        <li class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>+385 95 895 3387</span>
+                        </li>
+                        <li class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>info@doremiredo.hr</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© <span id="year"></span> doremiredo - Centar glazbe</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
