@@ -1,4 +1,4 @@
-﻿/* doremiredo Music Center - Clean CSS */
+/* doremiredo Music Center - Clean CSS */
 
 :root {
     --brand-red: #E11D48;
@@ -323,6 +323,13 @@ img {
     background-color: var(--brand-cream);
 }
 
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
 /*.bg-shape {
     position: absolute;
     border-radius: 9999px;
@@ -431,6 +438,12 @@ img {
     transform: rotate(2deg);
 }
 
+@media (max-width: 768px) {
+    .main-hero-image {
+        box-shadow: none;
+    }
+}
+
     .main-hero-image img {
         width: 100%;
         aspect-ratio: 4/5;
@@ -480,7 +493,8 @@ img {
 
 /* Programs Section */
 .programs-section {
-    padding: 8rem 0;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
     background-color: var(--white);
     min-height: 800px;
 }
@@ -739,6 +753,12 @@ img {
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+    .about-section {
+        padding-bottom: 1rem;
+    }
+}
+
 .about-container {
     display: grid;
     gap: 4rem;
@@ -779,6 +799,12 @@ img {
     border-radius: 2.5rem;
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+    .main-about-image {
+        box-shadow: none;
+    }
 }
 
     .main-about-image img {
@@ -926,6 +952,12 @@ img {
     padding: 6rem 0;
     background-color: var(--slate-900);
     color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding-bottom: 1rem;
+    }
 }
 
 .pricing-container {
@@ -1087,6 +1119,12 @@ img {
 .contact-section {
     padding: 6rem 0;
     background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding-bottom: 1rem;
+    }
 }
 
 .contact-container {
@@ -1256,6 +1294,12 @@ img {
     padding-bottom: 3rem;
 }
 
+@media (max-width: 768px) {
+    .site-footer {
+        padding-top: 1rem;
+    }
+}
+
 .footer-grid {
     display: grid;
     gap: 3rem;
@@ -1396,6 +1440,12 @@ img {
     width: 100%;
     max-width: var(--max-width);
     margin: 6rem auto 0;
+}
+
+@media (max-width: 768px) {
+    .map-wrapper {
+        margin: 1rem auto 0;
+    }
 }
 
 .map-iframe {
